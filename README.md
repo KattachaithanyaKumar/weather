@@ -1,6 +1,6 @@
 # A Weather Forecast App
 
-you are able to search for the city for the 7 day weather forecast
+you are able to search for the city for the 7 day weather forecast made using React js and aerisweather API.
 
 these are some of the snapshots of the website:
 
