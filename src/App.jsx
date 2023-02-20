@@ -11,7 +11,7 @@ import thunder from "./assets/weather icons/thunder.png";
 
 import LoadingIcon from "./assets/loading.gif";
 
-const API_KEY = "76e2f3a6e5msha9d6055dd5051b9p1fee85jsn7d2265ba6bcb";
+// const API_KEY = "76e2f3a6e5msha9d6055dd5051b9p1fee85jsn7d2265ba6bcb";
 
 const options = {
   method: "GET",
@@ -44,6 +44,14 @@ const icon_selection = (weather) => {
 
     case "Mostly Cloudy with Scattered Showers":
       return <img src={cloudy_storm} alt="isolated_storms" />;
+      break;
+
+    case "Mostly Cloudy with Rain and Isolated Storms":
+      return <img src={cloudy_storm} alt="isolated_storms" />;
+      break;
+
+    case "rain":
+      return <img src={rain} alt="rain" />;
       break;
   }
 };
@@ -143,7 +151,7 @@ function App() {
                 <div className="dayCell" key={item.dateTimeISO}>
                   <h4>{new Date(item.dateTimeISO).toLocaleDateString()}</h4>
                   <p>
-                    {item.maxTempC}°C - {item.minTempC}°C
+                    {item.maxTempC}°C / {item.minTempC}°C
                   </p>
                   {icon_selection(item.weather)}
                 </div>
