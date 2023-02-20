@@ -11,7 +11,7 @@
   </form>
   <div style={{ display: "flex" }}>
     {forecast.map((item) => (
-      <div key={item.dateTimeISO}>
+      <div>
         <img src={`https://openweathermap.org/img/wn/${item.icon}`} alt="" />
         <h3>{new Date(item.dateTimeISO).toLocaleDateString()}</h3>
         <p>
