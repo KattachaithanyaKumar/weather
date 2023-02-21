@@ -2,6 +2,8 @@
 
 you are able to search for the city for the 7 day weather forecast made using React js and aerisweather API.
 
+check out the app here : https://weather-app-katta.netlify.app/
+
 these are some of the snapshots of the website:
 
 ![image](https://user-images.githubusercontent.com/80614118/220178280-c71d80bb-c020-4f8b-b588-c08d3e9f3de1.png)
